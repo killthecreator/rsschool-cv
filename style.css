@@ -1,7 +1,125 @@
+@font-face {
+  font-family: Poppins;
+  src: url("assets/fonts/Poppins-Thin.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("assets/fonts/Poppins-Regular.ttf");
+}
 * {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth; /*Для плавной прокрутки */
+  background-color: #c2f0f4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0; 
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  background-color: grey;
+  border: black solid 3px;
+  border-radius: 20px;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-link {
+  line-height: 50px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s
+}
+
+.nav-link:hover {
+  color: #c2f0f4;
+
+}
+
+.container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5%;
+  border: black solid 3px;
+  border-radius: 20px;
+
+}
+.main-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.code-example {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  border: grey solid 2px;
+  border-radius: 20px;
+  white-space: pre-wrap;
+  padding: 0 20px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 10px;
+  background-color: grey;
+  border: black solid 3px;
+  border-radius: 20px;
+}
+.avatar {
+  width: 250px;
+  height: auto;
+  top: 0;
+}
+.contacts {
+  display: inline;
+  position: relative;
+  margin: 20px;
+  top: 0;
+
+}
+.summary {
+  display: inline;
+  position: relative;
+  margin: 20px;
+  top: 0;
+}
+.code {
+  display: inline;
+  position: relative;
+}
+.rs-logo {
+  width: 100px;
+  height: auto;
+}
+.my-gh {
+  width: 80px;
+  height: auto;
 }

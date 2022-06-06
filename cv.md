@@ -42,4 +42,4 @@ function findChildren(dancingBrigade) {
   * JS / FRONT-END. STAGE (RS School) (in progress) 
 *******************
 #### *English :*
-I have an upper intermediate level of english(B2). I studied english throughout my education process in school and univercity and also by myself. Twice i went to Malta for 2 weeks courses in chambercollege.com. Once i took a part in exchange program with students from Sicilia.
+I have an upper intermediate - advanced level of english(B2 -C1). I studied english throughout my education process in school and univercity and also by myself. Twice i went to Malta for 2 weeks courses in chambercollege.com. Once i took a part in exchange program with students from Sicilia.

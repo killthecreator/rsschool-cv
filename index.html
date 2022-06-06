@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
@@ -24,8 +24,96 @@
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main class="main">
+        <div class="container-main">
+            <div class="main-info">
+                <img src="/assets/img/avatar.png" alt="avatar" class="avatar">
+                <section id="contacts" class="contacts">
+                    <h2>Contacts:</h2>
+                    <ul>
+                        <li>Location: Russia, Moscow</li>
+                        <li>Phone: +7 915 094 97 22</li>
+                        <li>e-mail: podiumfffuuu@gmail.com</li>
+                        <li>GitHub: <a href="https://github.com/killthecreator">killthecreator</a></li>
+                        <li>Telegram: <a href="https://t.me/killthecreator">killthecreator</a></li>
+                    </ul>
+                </section>
+                <section id="summary" class="summary">
+                    <h2>About me:</h2>
+                    <p>I am a 23 year-old guy from Moscow (born in Minsk). I have a master's degree in engineering and
+                        after
+                        i graduated i tried myself in the engineering field, but after couple of months i realised that
+                        it
+                        is not my format of work in terms of flexibility and ability to learn further. So here i am
+                        trying
+                        something new.</p>
+                </section>
+            </div>
+            <section id="skills">
+                <h2>Skills:</h2>
+                <ul>
+                    <li>Matlab</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+            <section id="code" class="code">
+                <h2>Code example:</h2>
+                <p>My solution to <a href="https://www.codewars.com/kata/58539230879867a8cd00011c">Where is my
+                        parent!?(cry)</a>from codewars.com.</p>
+                <pre class="code-example">
+                    <code>
+        function findChildren(dancingBrigade) {
+            let arr = dancingBrigade.split('').sort((a, b) => a.codePointAt() - b.codePointAt());
+            let counter = 0;
+            let newArr = [];
+            while (arr[counter] == arr[counter].toUpperCase()) {
+                arr.filter(item => (item.toUpperCase() === arr[counter])).forEach(item => newArr.push(item));
+                counter ++;
+            }
+            return newArr.join('');
+        }
+                    </code>
+                </pre>
+            </section>
+            <section id="experience">
+                <h2>Experience:</h2>
+                <ul>
+                    <li><a href="https://github.com/killthecreator/rsschool-cv">CV</a></li>
+                </ul>
+            </section>
+            <section id="education">
+                <h2>Education:</h2>
+                <ul>
+                    <li>Master's degree in nanoengineering (BMSTU)</li>
+                    <li>JS / FRONT-END. STAGE 0</li>
+                </ul>
+            </section>
+            <section id="english">
+                <h2>English:</h2>
+                <p>I have an upper intermediate - advanced level of english(B2 -C1). I studied english throughout my
+                    education process in school and univercity and also by myself. Twice i went to Malta for 2 weeks
+                    courses in chambercollege.com. Once i took a part in exchange program with students from Sicilia.
+                </p>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <a href="https://github.com/killthecreator">
+                <img src="assets/img/gh-logo.png" alt="my-gh" class="my-gh">
+            </a>
+            <p class="year">2022</p>
+            <a href="https://rs.school/js/">
+                <img src="https://rs.school/images/rs_school_js.svg" alt="rs-logo" class="rs-logo">
+            </a>
+        </div>
+    </footer>
 
 </body>
 
