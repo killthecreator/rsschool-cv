@@ -12,7 +12,7 @@
 
 html {
   scroll-behavior: smooth; /*Для плавной прокрутки */
-  background-color: #c2f0f4;
+  background-color: white;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding: 10px;
+  padding: 10px 30px;
   background-color: grey;
   border: black solid 3px;
   border-radius: 20px;
@@ -54,7 +54,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #c2f0f4;
+  color: white;
 
 }
 
