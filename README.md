@@ -1,1 +1,1 @@
-# rsschool-cv
+https://killthecreator.github.io/rsschool-cv/

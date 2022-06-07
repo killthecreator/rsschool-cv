@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Poppins;
+  src: url("assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /*Для плавной прокрутки */
+  background-color: #ffffff
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0; 
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  list-style: none;
+  background-color: #a5a5a5;
+  border: #000000 solid 3px;
+  border-radius: 20px;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-link {
+  line-height: 50px;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.5s
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  font-size: 105%;
+}
+
+.container-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  border: #000000 solid 3px;
+  border-radius: 20px;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#profile {
+  text-align: center;
+}
+
+.name {
+  margin: 0 auto;
+  font-size: 200%;
+}
+
+.my-photo {
+  top: 0;
+  width: 250px;
+  height: auto;
+  border-radius: calc(250px / 2);
+  box-shadow: 10px 10px 5px #a5a5a5;
+  transition: all 0.5s;
+}
+
+.my-photo:hover {
+  width: calc(250px * 1.1);
+  height: auto;
+  border-radius: calc((250px / 2) * 1.1);
+}
+
+.contacts-list {
+  position: relative;
+  display: inline;
+  padding: 0;
+}
+
+.section {
+  position: relative;
+  display: inline;
+}
+
+.skills-list {
+  position: relative;
+  display: inline;
+  padding: 0;
+}
+
+.code-example {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  white-space: pre-wrap;
+  border: #a5a5a5 solid 2px;
+  border-radius: 20px;
+}
+
+.experience-list {
+  position: relative;
+  display: inline;
+  padding: 0;
+}
+
+.education-list {
+  position: relative;
+  display: inline;
+  padding: 0;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 10px 30px;
+  list-style: none;
+  background-color: #a5a5a5;
+  border: #000000 solid 3px;
+  border-radius: 20px;
+}
+
+.rs-logo {
+  width: 100px;
+  height: auto;
+  transition: opacity 0.5s;
+}
+
+.rs-logo:hover {
+  width: calc(100px * 1.05);
+  height: auto;
+  opacity: 50%;
+}
+
+.my-gh {
+  width: 80px;
+  height: auto;
+  transition: opacity 0.5s
+}
+
+.my-gh:hover {
+  width: calc(80px * 1.05);
+  height: auto;
+  opacity: 50%;
+}
