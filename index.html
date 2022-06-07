@@ -14,13 +14,13 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education and courses</a></li>
-                <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#summary">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#code">Code Example</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education and courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#english">English</a></li>
             </ul>
         </nav>
     </header>
@@ -28,31 +28,36 @@
     <main class="main">
         <div class="container-main">
             <div class="main-info">
-                <img src="/assets/img/avatar.png" alt="avatar" class="avatar">
-                <section id="contacts" class="contacts">
-                    <h2>Contacts:</h2>
-                    <ul>
+                <section class="section" id="profile">
+                    <h1 class="name">Gleb Belegov</h1>
+                    <p>Junior Front-End developer</p>
+                    <img class="my-photo" src="/assets/img/avatar.png" alt="my-photo" width="427" height="427">
+                </section>
+                <section class="section" id="contacts">
+                    <h2>Contacts</h2>
+                    <ul class="contacts-list">
                         <li>Location: Russia, Moscow</li>
                         <li>Phone: +7 915 094 97 22</li>
                         <li>e-mail: podiumfffuuu@gmail.com</li>
                         <li>GitHub: <a href="https://github.com/killthecreator">killthecreator</a></li>
                         <li>Telegram: <a href="https://t.me/killthecreator">killthecreator</a></li>
+                        <li>Discord: Gleb Belegov (@killthecreator)</li>
                     </ul>
                 </section>
-                <section id="summary" class="summary">
-                    <h2>About me:</h2>
-                    <p>I am a 23 year-old guy from Moscow (born in Minsk). I have a master's degree in engineering and
-                        after
-                        i graduated i tried myself in the engineering field, but after couple of months i realised that
-                        it
-                        is not my format of work in terms of flexibility and ability to learn further. So here i am
-                        trying
-                        something new.</p>
-                </section>
             </div>
-            <section id="skills">
+            <section class="section" id="summary">
+                <h2>About me:</h2>
+                <p>I am a 23 year-old guy from Moscow (born in Minsk). I have a master's degree in engineering and
+                    after
+                    i graduated i tried myself in the engineering field, but after couple of months i realised that
+                    it
+                    is not my format of work in terms of flexibility and ability to learn further. So here i am
+                    trying
+                    something new.</p>
+            </section>
+            <section class="section" id="skills">
                 <h2>Skills:</h2>
-                <ul>
+                <ul class="skills-list">
                     <li>Matlab</li>
                     <li>JavaScript</li>
                     <li>HTML</li>
@@ -60,7 +65,7 @@
                     <li>Git</li>
                 </ul>
             </section>
-            <section id="code" class="code">
+            <section class="section" id="code">
                 <h2>Code example:</h2>
                 <p>My solution to <a href="https://www.codewars.com/kata/58539230879867a8cd00011c">Where is my
                         parent!?(cry)</a>from codewars.com.</p>
@@ -75,46 +80,49 @@
                 counter ++;
             }
             return newArr.join('');
-        }
-                    </code>
+        }</code>
                 </pre>
             </section>
-            <section id="experience">
+            <section class="section" id="experience">
                 <h2>Experience:</h2>
-                <ul>
+                <ul class="experience-list">
                     <li><a href="https://github.com/killthecreator/rsschool-cv">CV</a></li>
                 </ul>
             </section>
-            <section id="education">
+            <section class="section" id="education">
                 <h2>Education:</h2>
-                <ul>
+                <ul class="education-list">
                     <li>Master's degree in nanoengineering (BMSTU)</li>
-                    <li>JS / FRONT-END. STAGE 0</li>
+                    <li>JS / FRONT-END. STAGE 0 (RS School)</li>
                 </ul>
             </section>
-            <section id="english">
+            <section class="section" id="english">
                 <h2>English:</h2>
                 <p>I have an upper intermediate - advanced level of english(B2 -C1). I studied english throughout my
                     education process in school and univercity and also by myself. Twice i went to Malta for 2 weeks
                     courses in chambercollege.com. Once i took a part in exchange program with students from Sicilia.
                 </p>
-
             </section>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="container-footer">
-            <a href="https://github.com/killthecreator">
-                <img src="assets/img/gh-logo.png" alt="my-gh" class="my-gh">
-            </a>
-            <p class="year">2022</p>
-            <a href="https://rs.school/js/">
-                <img src="https://rs.school/images/rs_school_js.svg" alt="rs-logo" class="rs-logo">
-            </a>
-        </div>
+        <ul class="footer-list">
+            <li class="footer-item">
+                <a href="https://github.com/killthecreator">
+                    <img class="my-gh" src="assets/img/gh-logo.png" alt="my-gh" width="1200" height="630">
+                </a>
+            </li>
+            <li class="footer-item">
+                <p class="year">2022</p>
+            </li>
+            <li class="footer-item">
+                <a href="https://rs.school/js/">
+                    <img class="rs-logo" width="2307" height="1093" src="https://rs.school/images/rs_school_js.svg" alt="rs-logo">
+                </a>
+            </li>
+        </ul>
     </footer>
-
 </body>
 
 </html>

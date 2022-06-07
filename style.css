@@ -1,18 +1,15 @@
 @font-face {
   font-family: Poppins;
-  src: url("assets/fonts/Poppins-Thin.ttf");
-}
-@font-face {
-  font-family: Poppins;
   src: url("assets/fonts/Poppins-Regular.ttf");
 }
+
 * {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth; /*Для плавной прокрутки */
-  background-color: white;
+  background-color: #ffffff
 }
 
 body {
@@ -23,11 +20,10 @@ body {
   margin: 0; 
   padding: 0;
   font-family: 'Poppins', sans-serif;
-
 }
 
 .nav {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 10px auto;
 }
 
@@ -35,10 +31,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
   padding: 10px 30px;
-  background-color: grey;
-  border: black solid 3px;
+  list-style: none;
+  background-color: #a5a5a5;
+  border: #000000 solid 3px;
   border-radius: 20px;
 }
 
@@ -49,77 +45,126 @@ body {
 .nav-link {
   line-height: 50px;
   text-decoration: none;
-  color: black;
+  color: #000000;
   transition: color 0.5s
 }
 
 .nav-link:hover {
-  color: white;
-
+  color: #ffffff;
+  font-size: 105%;
 }
 
 .container-main {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 5%;
-  border: black solid 3px;
+  padding: 30px 50px;
+  border: #000000 solid 3px;
   border-radius: 20px;
-
 }
+
 .main-info {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
+
+#profile {
+  text-align: center;
+}
+
+.name {
+  margin: 0 auto;
+  font-size: 200%;
+}
+
+.my-photo {
+  top: 0;
+  width: 250px;
+  height: auto;
+  border-radius: calc(250px / 2);
+  box-shadow: 10px 10px 5px #a5a5a5;
+  transition: all 0.5s;
+}
+
+.my-photo:hover {
+  width: calc(250px * 1.1);
+  height: auto;
+  border-radius: calc((250px / 2) * 1.1);
+}
+
+.contacts-list {
+  position: relative;
+  display: inline;
+  padding: 0;
+}
+
+.section {
+  position: relative;
+  display: inline;
+}
+
+.skills-list {
+  position: relative;
+  display: inline;
+  padding: 0;
+}
+
 .code-example {
+  padding: 0 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 21px;
-  border: grey solid 2px;
-  border-radius: 20px;
   white-space: pre-wrap;
-  padding: 0 20px;
+  border: #a5a5a5 solid 2px;
+  border-radius: 20px;
 }
 
-.container-footer {
+.experience-list {
+  position: relative;
+  display: inline;
+  padding: 0;
+}
+
+.education-list {
+  position: relative;
+  display: inline;
+  padding: 0;
+}
+
+.footer-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 10px auto;
-  padding: 0 10px;
-  background-color: grey;
-  border: black solid 3px;
+  padding: 10px 30px;
+  list-style: none;
+  background-color: #a5a5a5;
+  border: #000000 solid 3px;
   border-radius: 20px;
 }
-.avatar {
-  width: 250px;
-  height: auto;
-  top: 0;
-}
-.contacts {
-  display: inline;
-  position: relative;
-  margin: 20px;
-  top: 0;
 
-}
-.summary {
-  display: inline;
-  position: relative;
-  margin: 20px;
-  top: 0;
-}
-.code {
-  display: inline;
-  position: relative;
-}
 .rs-logo {
   width: 100px;
   height: auto;
+  transition: opacity 0.5s;
 }
+
+.rs-logo:hover {
+  width: calc(100px * 1.05);
+  height: auto;
+  opacity: 50%;
+}
+
 .my-gh {
   width: 80px;
   height: auto;
+  transition: opacity 0.5s
+}
+
+.my-gh:hover {
+  width: calc(80px * 1.05);
+  height: auto;
+  opacity: 50%;
 }
